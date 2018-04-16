@@ -388,13 +388,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 45px;
+  padding: 0 0 0 70px;
   &__item {
     display: flex;
     position: relative;
     align-items: center;
     img {
       margin-right: 15px;
+    }
+
+    p {
+      margin: 0;
     }
   }
 }
@@ -534,6 +538,7 @@ header {
       h3 {
         color: #272624;
         font-size: 15px;
+        margin: 0;
         font-weight: 300;
         text-transform: uppercase;
       }
@@ -566,6 +571,7 @@ header {
         max-width: 720px;
         object-fit: contain;
         position: relative;
+        margin-right: 25px;
         margin-top: -30px;
         box-shadow: -5px 5px 0px #ffde52;
       }
@@ -634,6 +640,7 @@ header {
         object-fit: contain;
         position: relative;
         left: -30px;
+        margin-left: 25px;
         top: 30px;
         box-shadow: 0px 5px 0 #ffde52;
       }
@@ -1284,4 +1291,69 @@ header {
       transform: scaleX(1);
     }
   }
+}
+
+
+//RESPONSIVE
+
+@media screen and (max-width : 1440px) {
+
+  .our-works-container {
+    &__item-bg-left {
+      &__work-block {
+        &__slider {
+          padding-right: 50px;
+          padding-left: 50px;
+        }
+
+        &__information {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 1230px) {
+  .right-side-info {
+    margin-left: 0 !important;
+  }
+
+  .our-works-container {
+    &__item-bg-left {
+      &__work-block {
+        &__slider {
+          max-width: 790px;
+        }
+      }
+    }
+  }
+
+  .header-slider {
+    height: 500px;
+  }
+
+}
+
+@media screen and (max-width : 1145px) {
+  .info-under-slider-container {
+    display: block;
+  }
+
+
+  .our-works-container {
+    &__item-bg-left {
+      &__work-block {
+        &__information {
+          .info-under {
+            a {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
 }
