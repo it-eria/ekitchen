@@ -182,6 +182,20 @@ $(window).resize(function() {
     });
 });
 
+
+$(window).on('load', function () {
+    $('.gray-bg-style').css({
+        'width': ($('.portfolio-container__width-1440__wrapper__item').width()) - (($('.portfolio-container__width-1440__wrapper__item').width()) / 4)
+    });
+});
+
+
+$(window).resize(function() {
+    $('.gray-bg-style').css({
+        'width': ($('.portfolio-container__width-1440__wrapper__item').width()) - (($('.portfolio-container__width-1440__wrapper__item').width()) / 4)
+    });
+});
+
 $(window).on('load', function () {
     $('.left-bg-gray').css({
         'width': ($(window).width() / 2) + 200
@@ -290,6 +304,18 @@ $(window).resize(function() {
 $(window).on('load', function () {
     $('.footer-container__width-1440__gmap-container').css({
             'width': $(window).width() - (($(window).width() - $('.width-1440').width()) / 2) - $('.footer-container__width-1440__footer-info').width()
+    });
+});
+
+$(window).resize(function() {
+    $('.bg-gray-portfolio').css({
+        'width': $('.portfolio-container').width() - ($('.portfolio-container').width() / 4)
+    });
+});
+
+$(window).on('load', function () {
+    $('.bg-gray-portfolio').css({
+        'width': $('.portfolio-container').width() - ($('.portfolio-container').width() / 4)
     });
 });
 
