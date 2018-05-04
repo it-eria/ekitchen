@@ -136,11 +136,11 @@ $('.right-arrow-testimonials').click(function(){
 });
 
 $('.left-arrow-portfolio').click(function(){
-    $('.single-portfolio-slider-container__width-1440__content__slider-portfolio-thumb').slick('slickPrev');
+    $('.single-portfolio-slider-container__width-1440__slider-portfolio').slick('slickPrev');
 });
 
 $('.right-arrow-portfolio').click(function(){
-    $('.single-portfolio-slider-container__width-1440__content__slider-portfolio-thumb').slick('slickNext');
+    $('.single-portfolio-slider-container__width-1440__slider-portfolio').slick('slickNext');
 });
 
 
@@ -449,19 +449,20 @@ $('.single-portfolio-slider-container__width-1440__slider-portfolio').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    autoplay: true
 
-    asNavFor: '.single-portfolio-slider-container__width-1440__content__slider-portfolio-thumb'
+    // asNavFor: '.single-portfolio-slider-container__width-1440__content__slider-portfolio-thumb'
 });
-$('.single-portfolio-slider-container__width-1440__content__slider-portfolio-thumb').slick({
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    asNavFor: '.single-portfolio-slider-container__width-1440__slider-portfolio',
-    dots: true,
-    autoplay: true,
-    focusOnSelect: true,
-    arrows: false
-
-});
+// $('.single-portfolio-slider-container__width-1440__content__slider-portfolio-thumb').slick({
+//     slidesToShow: 4,
+//     slidesToScroll: 4,
+//     asNavFor: '.single-portfolio-slider-container__width-1440__slider-portfolio',
+//     dots: true,
+//     autoplay: true,
+//     focusOnSelect: true,
+//     arrows: false
+//
+// });
 
 
 

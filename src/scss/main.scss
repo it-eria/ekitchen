@@ -588,6 +588,7 @@ header {
           font-size: 40px;
           text-transform: uppercase;
           font-weight: 300;
+          margin-bottom: 60px;
           border-left: 2px solid #ffde52;
           display: table;
           padding: 0 30px;
@@ -938,7 +939,7 @@ header {
 .news-container {
   background-color: #eee;
   margin-top: 120px;
-  padding: 3% 0;
+  padding: 0 0 3% 0;
   h2 {
     color: #000;
     font-family: Oswald, sans-serif;
@@ -948,6 +949,7 @@ header {
     border-left: 2px solid #ffde52;
     display: table;
     padding: 0 30px;
+    margin: 35px 0;
     border-right: 2px solid #ffde52;
   }
 
@@ -978,7 +980,7 @@ header {
 
     &__news-slider {
       &__item {
-        padding: 15px;
+        padding: 0 15px 15px 15px;
         img {
           width: 100%;
         }
@@ -1423,7 +1425,7 @@ header {
         border-left: 2px solid #ffde52;
         display: table;
         padding: 0 30px;
-        margin: 20px 0;
+        margin: 35px 0;
         border-right: 2px solid #ffde52;
       }
 
@@ -1529,7 +1531,7 @@ header {
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 5px;
-        margin: 0 20px 0 0;
+        margin: 15px 20px 15px 0;
         display: table;
         z-index: 99;
       }
@@ -1667,6 +1669,7 @@ header {
   border-left: 2px solid #ffde52;
   display: table;
   padding: 0 30px;
+  margin: 35px 0;
   border-right: 2px solid #ffde52;
 }
 
@@ -1899,7 +1902,7 @@ header {
   width: 220px;
   height: 30px;
   margin: 25px auto;
-  border-radius: 0px;
+  border-radius: 0;
   border-bottom: 1px solid #ffde52;
 }
 
@@ -1942,4 +1945,34 @@ input[type="file"]::-webkit-file-upload-button {
 .file-upload-native {
   z-index: 15;
   opacity: 0;
+}
+
+.see-portfolio {
+  padding: 10px 15px;
+  border: 2px solid #ffde52;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  margin-top: 55px;
+}
+
+.images-block-portfolio {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 325px;
+  display: -webkit-box;
+  align-items: flex-start;
+  padding: 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  img {
+    width: 100%;
+    max-width: 307px;
+    margin: 5px 0 5px 10px;
+    object-fit: contain;
+  }
 }
