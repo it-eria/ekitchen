@@ -1465,8 +1465,8 @@ header {
 
       flex-wrap: wrap;
       &__item {
-        width: 100%;
-        max-width: 630px;
+        width: 48%;
+        max-width: none;
         height: auto;
         margin: 0 5px 50px;
         a {
@@ -1826,7 +1826,7 @@ header {
 
 @media (max-width: 1350px) {
   .portfolio-container__width-1440__wrapper__item {
-    width: 49%;
+    width: 48%;
     max-width: none;
   }
 

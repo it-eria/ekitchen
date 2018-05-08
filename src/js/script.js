@@ -215,6 +215,19 @@ $(window).on('load', function () {
 
 
 $(window).resize(function() {
+    $('.line-status-height').css({
+        'width': ($('.portfolio-container').height() + $('#portfolio-height').height()) - 83
+    });
+});
+
+$(window).on('load', function () {
+    $('.line-status-height').css({
+        'width': ($('.portfolio-container').height() + $('#portfolio-height').height()) - 83
+    });
+});
+
+
+$(window).resize(function() {
     $('#left-line').css({
         'height': $('.single-portfolio-slider-container__width-1440').height() - 48
     });
