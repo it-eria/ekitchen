@@ -1,10 +1,14 @@
 //= vendors/jquery-3.3.1.min.js
 //= vendors/slick.min.js
 //= vendors/aos.js
+
 //= vendors/bootstrap.min.js
 
-
-
+//
+// if (screen.width > 992) {
+//     document.write ('<script type="text/javascript" src="assets/js/aos.js" ></sc' + 'ript>');
+//
+// }
 
 (function($) {
 
@@ -47,7 +51,22 @@ $('.news-container__news-slider-main__news-slider').slick({
     speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
-    appendDots: $(".news-container__news-slider-main__news-dots-container")
+    appendDots: $(".news-container__news-slider-main__news-dots-container"),
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+
+                slidesToShow: 1
+            }
+        }
+    ]
 });
 
 $('.testimonials-container__testimonials-slider').slick({
@@ -58,7 +77,16 @@ $('.testimonials-container__testimonials-slider').slick({
     speed: 1600,
     slidesToShow: 2,
     slidesToScroll: 2,
-    appendDots: $(".testimonials-container__testimonials-dots-container")
+    appendDots: $(".testimonials-container__testimonials-dots-container"),
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 
