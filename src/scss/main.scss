@@ -1038,7 +1038,7 @@ header {
 
   background-color: #eee;
   margin-top: 120px;
-  padding: 1% 0;
+  padding: 0;
   h2 {
     color: #000;
     font-family: Oswald, sans-serif;
@@ -1992,7 +1992,7 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 
-.see-more-mobile, .testimonials-arrows-container, .our-works-mobile, .mob-social {
+.see-more-mobile, .testimonials-arrows-container, .our-works-mobile, .mob-social, .mobile-arrow-header {
   display: none;
 }
 //MOBILE SITE ADAPTATION
@@ -2127,6 +2127,7 @@ input[type="file"]::-webkit-file-upload-button {
   }
 
    .mobile-arrow-header {
+     display: flex;
      background-color: #f1f1f1;
      padding: 0 15px;
    }
