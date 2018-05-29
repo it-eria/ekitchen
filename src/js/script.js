@@ -94,7 +94,7 @@ $('.testimonials-container__testimonials-slider').slick({
 });
 
 
-$('.slider-1').slick({
+$('.slider-1, .slider-2, .slider-3, .slider-4, .slider-5, .slider-6, .slider-7, .slider-8, .slider-9, .slider-10').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -103,85 +103,6 @@ $('.slider-1').slick({
     cssEase: 'linear'
 });
 
-$('.slider-2').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    fade: true,
-    cssEase: 'linear'
-});
-$('.slider-3').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    fade: true,
-    cssEase: 'linear'
-});
-
-$('.slider-4').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    fade: true,
-    cssEase: 'linear'
-});
-
-$('.slider-5').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    fade: true,
-    cssEase: 'linear'
-});
-
-$('.slider-6').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    fade: true,
-    cssEase: 'linear'
-});
-
-$('.slider-7').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    fade: true,
-    cssEase: 'linear'
-});
-
-$('.slider-8').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    fade: true,
-    cssEase: 'linear'
-});
-
-$('.slider-9').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    fade: true,
-    cssEase: 'linear'
-});
-
-$('.slider-10').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    fade: true,
-    cssEase: 'linear'
-});
 
 $('.left-arrow').click(function(){
     $('.header-slider').slick('slickPrev');
@@ -302,21 +223,6 @@ $('.right-arrow-portfolio').click(function(){
 });
 
 
-// $(window).resize(function() {
-//     $('.header-slider').css({
-//         'position': 'relative',
-//         'left': -($(window).width() - $('.width-1440').width()) / 2
-//     });
-// });
-
-// $(window).on('load', function () {
-//     $('.header-slider').css({
-//         'position': 'relative',
-//         'left': -($(window).width() - $('.width-1440').width()) / 2
-//     });
-// });
-//
-//
 
 $(window).resize(function() {
     $('.bg-gray-single-news').css({
@@ -594,12 +500,9 @@ setInterval(function() {
 function hasScrolled() {
     var st = $(this).scrollTop();
 
-    // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
 
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
         $('.menu-container').removeClass('nav-down').addClass('nav-up');
@@ -613,8 +516,6 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
-
-
 $('.single-portfolio-slider-container__width-1440__slider-portfolio').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -624,16 +525,6 @@ $('.single-portfolio-slider-container__width-1440__slider-portfolio').slick({
 
     // asNavFor: '.single-portfolio-slider-container__width-1440__content__slider-portfolio-thumb'
 });
-// $('.single-portfolio-slider-container__width-1440__content__slider-portfolio-thumb').slick({
-//     slidesToShow: 4,
-//     slidesToScroll: 4,
-//     asNavFor: '.single-portfolio-slider-container__width-1440__slider-portfolio',
-//     dots: true,
-//     autoplay: true,
-//     focusOnSelect: true,
-//     arrows: false
-//
-// });
 
 
 
