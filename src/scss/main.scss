@@ -404,37 +404,7 @@ header {
   }
 }
 
-.left-arrow {
-  background-image: url("../images/left-arrow.png");
-  background-repeat: no-repeat;
-  margin: 0;
-  width: 40px;
-  padding: 0 10px;
-  cursor: pointer;
-  height: 20px;
-  &:before {
-    content: '';
-  }
-  &:after {
-    content: '';
-  }
-}
 
-.right-arrow {
-  background-image: url("../images/right-arrow.png");
-  background-repeat: no-repeat;
-  width: 40px;
-  cursor: pointer;
-  padding: 0 10px;
-  margin: 0;
-  height: 20px;
-  &:before {
-    content: '';
-  }
-  &:after {
-    content: '';
-  }
-}
 
 .dots-container {
   display: flex;
@@ -880,69 +850,7 @@ header {
 
 }
 
-.left-arrow-2 {
-  background-image: url("../images/left-arrow.png");
-  background-repeat: no-repeat;
-  margin: 0;
-  width: 40px;
-  padding: 0 10px;
-  cursor: pointer;
-  height: 20px;
-  &:before {
-    content: '';
-  }
-  &:after {
-    content: '';
-  }
-}
 
-.right-arrow-2 {
-  background-image: url("../images/right-arrow.png");
-  background-repeat: no-repeat;
-  width: 40px;
-  cursor: pointer;
-  padding: 0 10px;
-  margin: 0;
-  height: 20px;
-  &:before {
-    content: '';
-  }
-  &:after {
-    content: '';
-  }
-}
-
-.left-arrow-3 {
-  background-image: url("../images/left-arrow.png");
-  background-repeat: no-repeat;
-  margin: 0;
-  width: 40px;
-  padding: 0 10px;
-  cursor: pointer;
-  height: 20px;
-  &:before {
-    content: '';
-  }
-  &:after {
-    content: '';
-  }
-}
-
-.right-arrow-3 {
-  background-image: url("../images/right-arrow.png");
-  background-repeat: no-repeat;
-  width: 40px;
-  cursor: pointer;
-  padding: 0 10px;
-  margin: 0;
-  height: 20px;
-  &:before {
-    content: '';
-  }
-  &:after {
-    content: '';
-  }
-}
 
 .main-slider-container {
   overflow: hidden;
@@ -1191,7 +1099,7 @@ header {
     display: flex;
     justify-content: flex-end;
 
-    button {
+    button, .see-all-btn {
       width: 220px;
       height: 45px;
       border: 1px solid #ccc;
@@ -1203,7 +1111,9 @@ header {
       margin-left: 10px;
       outline: none;
       justify-content: center;
+      text-decoration: none;
     }
+
 
     i {
       font-size: 40px;
@@ -3298,3 +3208,100 @@ input[type="file"]::-webkit-file-upload-button {
     text-decoration: none;
   }
 }
+
+
+.left-arrow-sliders-home {
+  background-image: url("../images/left-arrow.png");
+  background-repeat: no-repeat;
+  margin: 0;
+  width: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+  height: 20px;
+  &:before {
+    content: '';
+  }
+  &:after {
+    content: '';
+  }
+}
+
+.right-arrow-sliders-home {
+  background-image: url("../images/right-arrow.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  cursor: pointer;
+  padding: 0 10px;
+  margin: 0;
+  height: 20px;
+  &:before {
+    content: '';
+  }
+  &:after {
+    content: '';
+  }
+}
+
+//.left-arrow-2 {
+//  background-image: url("../images/left-arrow.png");
+//  background-repeat: no-repeat;
+//  margin: 0;
+//  width: 40px;
+//  padding: 0 10px;
+//  cursor: pointer;
+//  height: 20px;
+//  &:before {
+//    content: '';
+//  }
+//  &:after {
+//    content: '';
+//  }
+//}
+//
+//.right-arrow-2 {
+//  background-image: url("../images/right-arrow.png");
+//  background-repeat: no-repeat;
+//  width: 40px;
+//  cursor: pointer;
+//  padding: 0 10px;
+//  margin: 0;
+//  height: 20px;
+//  &:before {
+//    content: '';
+//  }
+//  &:after {
+//    content: '';
+//  }
+//}
+//
+//.left-arrow-3 {
+//  background-image: url("../images/left-arrow.png");
+//  background-repeat: no-repeat;
+//  margin: 0;
+//  width: 40px;
+//  padding: 0 10px;
+//  cursor: pointer;
+//  height: 20px;
+//  &:before {
+//    content: '';
+//  }
+//  &:after {
+//    content: '';
+//  }
+//}
+//
+//.right-arrow-3 {
+//  background-image: url("../images/right-arrow.png");
+//  background-repeat: no-repeat;
+//  width: 40px;
+//  cursor: pointer;
+//  padding: 0 10px;
+//  margin: 0;
+//  height: 20px;
+//  &:before {
+//    content: '';
+//  }
+//  &:after {
+//    content: '';
+//  }
+//}

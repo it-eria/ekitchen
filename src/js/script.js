@@ -112,11 +112,11 @@ $('.right-arrow').click(function(){
     $('.header-slider').slick('slickNext');
 });
 
-$('.left-arrow').click(function(){
+$('.left-arrow-1').click(function(){
     $('.slider-1').slick('slickPrev');
 });
 
-$('.right-arrow').click(function(){
+$('.right-arrow-1').click(function(){
     $('.slider-1').slick('slickNext');
 });
 
