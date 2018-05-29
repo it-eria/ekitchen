@@ -1345,6 +1345,8 @@ header {
   }
 }
 
+
+
 @media screen and (max-width : 1230px) {
   .right-side-info {
     margin-left: 0 !important;
@@ -1585,13 +1587,15 @@ header {
     &__content {
       display: flex;
       align-items: flex-start;
+      margin-top: 30px;
       &__description {
         width: 100%;
-        max-width: 700px;
+        max-width: 400px;
         h3 {
           font-size: 40px;
           font-family: "Oswald", sans-serif;
           font-weight: 100;
+          margin: 0;
         }
 
         p {
@@ -2000,11 +2004,11 @@ input[type="file"]::-webkit-file-upload-button {
 .images-block-portfolio {
   position: relative;
   width: 100%;
-  max-width: 700px;
-  height: 325px;
+  max-width: none;
+  height: auto;
   display: -webkit-box;
   align-items: flex-start;
-  padding: 25px;
+  padding: 0px 0px 25px 25px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -2012,12 +2016,12 @@ input[type="file"]::-webkit-file-upload-button {
 
   a {
     width: 100%;
-    max-width: 48%;
-    margin: 5px 0 5px 10px;
+    max-width: 32%;
+    margin: 5px;
     img {
       width: 100%;
 
-      margin: 5px 0 5px 10px;
+      margin: 0;
       object-fit: contain;
     }
   }
@@ -2127,9 +2131,9 @@ input[type="file"]::-webkit-file-upload-button {
 
 
 @media (max-width: 1169px) {
-  .images-block-portfolio img {
-    max-width: 47%;
-  }
+  //.images-block-portfolio img {
+  //  max-width: 47%;
+  //}
 }
 
 @media (max-width: 1085px) {
@@ -2153,6 +2157,10 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 @media (max-width: 992px) {
+
+  .single-portfolio-slider-container__width-1440__content {
+    flex-direction: column;
+  }
 
   .mtop-30 {
     margin-top: 30px !important;
@@ -2257,9 +2265,9 @@ input[type="file"]::-webkit-file-upload-button {
 
 
 
-.images-block-portfolio {
-  display: none;
-}
+//.images-block-portfolio {
+//  display: none;
+//}
 
   .single-portfolio-slider-container__width-1440__content__description {
    max-width: none;
@@ -3305,3 +3313,15 @@ input[type="file"]::-webkit-file-upload-button {
 //    content: '';
 //  }
 //}
+
+@media screen and (max-width : 1280px) {
+  .images-block-portfolio a {
+    max-width: 31%;
+  }
+}
+
+@media screen and (max-width : 500px) {
+  .images-block-portfolio a {
+    max-width: none;
+  }
+}
