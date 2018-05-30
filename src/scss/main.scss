@@ -797,6 +797,8 @@ header {
   margin-top: 20px;
 }
 
+
+
 .left-bg-gray {
   background-color: #eee;
   width: 600px;
@@ -1738,96 +1740,102 @@ header {
       flex-wrap: wrap;
       position: relative;
       margin: 0 auto;
-      .input-group {
-        label {
-          display:block;
-          background:transparent;
-          width:100%;
-          padding:10px;
-          height:30px;
-          font-weight:600;
-          transition: all 0.2s ease;
-          transform:translate(0px,30px);
-          z-index:1;
-          position:relative;
+      .form-write-us {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        .input-group {
+          label {
+            display:block;
+            background:transparent;
+            width:100%;
+            padding:10px;
+            height:30px;
+            font-weight:600;
+            transition: all 0.2s ease;
+            transform:translate(0px,30px);
+            z-index:1;
+            position:relative;
 
-          font-size: 16px;
+            font-size: 16px;
 
 
+          }
+          .focus {
+            transform:translate(0,0px);
+            color:#1d2126;
+
+          }
+
+          input {
+            display:block;
+            font-size: 16px;
+            width:100%;
+            padding:10px;
+            height:30px;
+            border:0 none;
+            border-bottom:1px solid #f1f1f1;
+            color: #1d2126;
+            font-weight:300;
+            background:transparent;
+            z-index:2;
+            position:relative;
+            transition:background 0.2s ease;
+            &:focus {
+              outline: none;
+
+            }
+          }
+
+          textarea {
+            display:block;
+            font-size: 16px;
+            width:100%;
+            padding:10px;
+            margin-top: 35px;
+            border: 1px solid #f1f1f1;
+            color: #1d2126;
+            font-weight:300;
+            background:transparent;
+            z-index:2;
+            position:relative;
+            transition:background 0.2s ease;
+            &:focus {
+              outline: none;
+
+            }
+          }
         }
-        .focus {
-          transform:translate(0,0px);
-          color:#1d2126;
 
+        .width-48 {
+          width: 48%;
         }
 
-        input {
-          display:block;
+        .width-100 {
+          width: 100%;
+        }
+
+        button {
+          background-color: #fff;
+          padding: 7px 25px;
           font-size: 16px;
-          width:100%;
-          padding:10px;
-          height:30px;
-          border:0 none;
-          border-bottom:1px solid #f1f1f1;
-          color: #1d2126;
-          font-weight:300;
-          background:transparent;
-          z-index:2;
-          position:relative;
-          transition:background 0.2s ease;
+          font-weight: 300;
+          color: #000;
+          width: 100%;
+          margin: 0 auto;
+          float: none;
+          max-width: 220px;
+          border: 1px solid #ffde52;
+          text-align: center;
+          cursor: pointer;
+          margin-top: 19px;
           &:focus {
             outline: none;
 
           }
         }
-
-        textarea {
-          display:block;
-          font-size: 16px;
-          width:100%;
-          padding:10px;
-          margin-top: 35px;
-          border: 1px solid #f1f1f1;
-          color: #1d2126;
-          font-weight:300;
-          background:transparent;
-          z-index:2;
-          position:relative;
-          transition:background 0.2s ease;
-          &:focus {
-            outline: none;
-
-          }
-        }
       }
 
-      .width-48 {
-        width: 48%;
-      }
-
-      .width-100 {
-        width: 100%;
-      }
-
-      button {
-        background-color: #fff;
-        padding: 7px 25px;
-        font-size: 16px;
-        font-weight: 300;
-        color: #000;
-        width: 100%;
-        margin: 0 auto;
-        float: none;
-        max-width: 220px;
-        border: 1px solid #ffde52;
-        text-align: center;
-        cursor: pointer;
-        margin-top: 19px;
-        &:focus {
-          outline: none;
-
-        }
-      }
     }
   }
 }
@@ -3326,4 +3334,8 @@ input[type="file"]::-webkit-file-upload-button {
   .images-block-portfolio a {
     max-width: none;
   }
+}
+
+#map {
+  height: 395px;width: 100%;
 }

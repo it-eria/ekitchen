@@ -438,6 +438,7 @@
                         <div class="contact-form-container__form">
 
                             <div class="contact-form-container__form__write-to-us clearfix">
+<form class="form-write-us">
                                 <button class="close-review-slide" type="button" data-toggle="collapse"
                                         data-target="#collapseExample"
                                         aria-expanded="true" aria-controls="collapseExample"></button>
@@ -498,7 +499,7 @@
                 </div>
 
                 <div class="footer-container__width-1440__gmap-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.4698006687595!2d24.053454315707757!3d49.796034779390375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae86d5438c133%3A0x3498dd280fae3352!2z0L_RgNC-0YHQv9C10LrRgiDQp9C10YDQstC-0L3QvtC5INCa0LDQu9C40L3RiywgNzcsINCb0YzQstC-0LIsINCb0YzQstC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1sru!2sua!4v1527684487419" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+               <div id="map"></div>
                 </div>
 
             </div>
@@ -509,7 +510,27 @@
             </div>
         </div>
     </div>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: {lat: 49.7960348, lng: 24.055643}
+            });
+
+            var image = 'assets/images/ico-maps.png';
+            var beachMarker = new google.maps.Marker({
+                position: {lat: 49.7960348, lng: 24.055643},
+                map: map,
+                icon: image
+            });
+        }
+    </script>
     <script type="text/javascript" src="assets/js/script.min.js"></script>
+
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYSR7S4cT0aIQeTszmlHJMWYQJCWOVgBI&callback=initMap">
+    </script>
 </div>
 
 

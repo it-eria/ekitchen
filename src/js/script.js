@@ -8,6 +8,8 @@
 //
 // }
 
+
+
 $(document).ready(function() {
     setTimeout(function() {
         $('.wrapper').addClass('loaded');
@@ -606,5 +608,4 @@ $(function() {
     };
     preview.init();
 });
-
 
